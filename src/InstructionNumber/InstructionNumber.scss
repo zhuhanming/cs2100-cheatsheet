@@ -1,0 +1,17 @@
+.instruction {
+  &__results {
+    display: flex;
+    span {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    &-min {
+      flex: 1;
+    }
+
+    &-max {
+      flex: 1;
+    }
+  }
+}
