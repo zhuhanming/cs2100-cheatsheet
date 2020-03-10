@@ -29,6 +29,16 @@ const CheatSheet = () => {
           IEEE 754 Single-Precision Floating Point
         </h2>
         <FloatingPoint />
+        <footer className='cheatsheet__footer'>
+          Project by{" "}
+          <a
+            href='https://github.com/zhuhanming'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            zhuhanming
+          </a>
+        </footer>
       </div>
     </div>
   );

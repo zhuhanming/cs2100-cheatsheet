@@ -152,6 +152,8 @@ const FloatingPoint = () => {
             value={state.originalDecimal}
           />
         </div>
+      </div>
+      <div className='field floating'>
         <div className='control'>
           <label>Value actually stored</label>
           <input
@@ -162,6 +164,8 @@ const FloatingPoint = () => {
             value={state.savedDecimal}
           />
         </div>
+      </div>
+      <div className='field floating'>
         <div className='control'>
           <label>Error due to conversion</label>
           <input
@@ -172,6 +176,8 @@ const FloatingPoint = () => {
             value={state.error}
           />
         </div>
+      </div>
+      <div className='field floating'>
         <div className='control'>
           <label>Hexadecimal Value</label>
           <input
@@ -183,6 +189,8 @@ const FloatingPoint = () => {
             value={state.hex}
           />
         </div>
+      </div>
+      <div className='field floating'>
         <div className='control'>
           <label>Binary Value</label>
           <input
