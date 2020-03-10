@@ -1,0 +1,40 @@
+.base-converter {
+  display: flex;
+
+  &__base {
+    width: 20%;
+  }
+
+  &__value {
+    flex: 1;
+  }
+
+  &__input {
+    display: flex;
+    align-items: stretch;
+
+    .dropdown.is-hoverable {
+      min-height: 100%;
+      font-family: inherit;
+
+      .dropdown-menu {
+        font-family: inherit;
+        .dropdown-content {
+          font-family: inherit;
+          margin: 0;
+
+          .dropdown-item {
+            font-family: inherit;
+            width: 100%;
+            margin: 0;
+          }
+        }
+      }
+      .dropdown-trigger {
+        button {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
