@@ -83,7 +83,6 @@ const FloatingPoint = () => {
       return;
     }
     let hexadecimalValue = parseInt(e.target.value, 16);
-    console.log(hexadecimalValue);
     const decimalValue = convertHexIeeeToDec(hexadecimalValue);
     const binaryValue = hexadecimalValue.toString(2).padStart(32, "0");
     hexadecimalValue = hexadecimalValue.toString(16).padStart(8, "0");

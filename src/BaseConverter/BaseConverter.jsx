@@ -55,11 +55,9 @@ const BaseConverter = () => {
     }
     let n = 0;
     let curr = parseInt(state.inputValue, state.inputBase);
-    console.log(curr);
     while (curr < -Math.pow(2, n - 1)) {
       n += 1;
     }
-    console.log(n);
     return (Math.pow(2, n) + parseInt(curr))
       .toString(state.outputBase)
       .replace("-", "");
@@ -101,7 +99,6 @@ const BaseConverter = () => {
             placeholder='Enter number here'
             onChange={e => {
               setState({ inputValue: e.target.value });
-              console.log(e.target.value);
             }}
           />
         </div>
