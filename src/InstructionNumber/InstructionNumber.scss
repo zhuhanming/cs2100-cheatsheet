@@ -1,6 +1,8 @@
 .instruction {
   &__results {
     display: flex;
+    margin-bottom: 1rem;
+
     span {
       font-size: 2rem;
       font-weight: bold;

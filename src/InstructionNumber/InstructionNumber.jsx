@@ -58,18 +58,6 @@ const InstructionNumber = () => {
   };
   return (
     <div className='instruction'>
-      <div className='field'>
-        <label>Instruction Opcode Lengths</label>
-        <div className='control'>
-          <input
-            className='input is-large'
-            type='text'
-            placeholder='Enter instruction opcode lengths separated by commas'
-            onChange={handleChange}
-          />
-        </div>
-      </div>
-
       <div className='instruction__results'>
         <div className='instruction__results-min'>
           Minimum
@@ -80,6 +68,17 @@ const InstructionNumber = () => {
           Maximum
           <br />
           <span>{state.maximum ? state.maximum : "No value"}</span>
+        </div>
+      </div>
+      <div className='field'>
+        <label>Instruction Opcode Lengths (separated by commas)</label>
+        <div className='control'>
+          <input
+            className='input is-large'
+            type='text'
+            placeholder='e.g. 4, 7, 8'
+            onChange={handleChange}
+          />
         </div>
       </div>
     </div>
